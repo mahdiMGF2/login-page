@@ -1,2 +1,2 @@
 # login-page
-صفحه ورود  فارسی و راستچین شده
+Persian login page and rtl
