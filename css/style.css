@@ -1,0 +1,203 @@
+    /* fonts */
+    
+    @font-face {
+        font-family: 'Conv_IranSansDN';
+        src: url('../fonts/IranSansDN.eot');
+        src: local('☺'), url('../fonts/IranSansDN.woff') format('woff'), url('../fonts/IranSansDN.ttf') format('truetype'), url('../fonts/IranSansDN.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    * {
+        font-family: Conv_IranSansDN;
+    }
+    /* fonts */
+    /* cssreast */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+    /* cssreast */
+    /* content */
+    
+     ::slotted {
+        color: white;
+        background-color: red;
+    }
+    
+    body {
+        background: url("../img/desola-lanre.png") no-repeat;
+        background-size: cover;
+    }
+    
+    .login-page {
+        background-color: white;
+        max-width: 1100px;
+        margin: 0 auto;
+        margin: 155px auto;
+        padding: 60px;
+        border-radius: 20px;
+        box-shadow: 0 -7px 41px -7px #cfe1f5;
+    }
+    
+    .box-login {
+        display: flex;
+    }
+    
+    .formlogin {
+        width: 50%;
+        border-left: 2px dashed thistle;
+    }
+    
+    .formlogin h1 {
+        font-size: 22px;
+        margin-bottom: 35px;
+        color: #7b868a;
+        text-align: center;
+    }
+    
+    .form-group {
+        margin: 17px 35px;
+    }
+    
+    .form-group input {
+        width: 75%;
+        padding: 7px;
+        margin-right: 10px;
+        border-radius: 6px;
+        border: 1px solid #808e99;
+    }
+    
+    .form-group input[type="password"] {
+        margin-right: 27px;
+    }
+    
+    .form-group input:focus {
+        background-color: #e3e3ea;
+        box-shadow: 0px 0px 10px 0px #0ab828;
+    }
+    
+    .formlogin button {
+        color: white;
+        background-color: tomato;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: none;
+        margin: 15px 115px;
+        width: 50%;
+        cursor: pointer;
+    }
+    
+    .formlogin button:hover {
+        background-color: #ffc400;
+    }
+    
+    .infologin {
+        margin: 34px;
+        width: 50%;
+    }
+    
+    .infologin h2 {
+        font-size: 17px;
+        margin-bottom: 22px;
+    }
+    
+    .infologin ul li {
+        font-size: 14px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+    
+    .infologin ul li::before {
+        content: "\2022";
+        color: red;
+        font-size: 20px;
+        display: inline-block;
+        width: 1em;
+        margin-right: -1em;
+    }
+    
+    .infologin ul li:hover {
+        color: green;
+    }
+    /* content */
+    /* mobile */
+    
+    @media (max-width:500px) {
+        .login-page {
+            padding: 60px 0px;
+            width: 91%;
+        }
+        .formlogin {
+            border: none;
+            width: 100%;
+        }
+        .formlogin button {
+            margin: 15px 75px;
+            width: 61%;
+        }
+        .infologin {
+            display: none;
+        }
+        .form-group {
+            width: 92%;
+            margin: 10px auto;
+        }
+        .form-group input {
+            margin-right: 0px;
+        }
+        .form-group input[type="password"] {
+            margin-right: 18px;
+        }
+    }
+    /* moblile */
+    /* mobile */
+    
+    @media (min-width:501px) and (max-width:768px) {
+        .login-page {
+            padding: 60px 0px;
+            width: 91%;
+        }
+        .formlogin {
+            border: none;
+            width: 100%;
+        }
+        .formlogin button {
+            margin: 15px 19%;
+            width: 63%;
+        }
+        .infologin {
+            display: none;
+        }
+        .form-group {
+            width: 79%;
+            margin: 10px auto;
+        }
+        .form-group input {
+            margin-right: 0px;
+        }
+        .form-group input[type="password"] {
+            margin-right: 18px;
+        }
+    }
+    /* moblile */
+    
+    @media (min-width:769px) and (max-width:1200px) {
+        .login-page {
+            padding: 21px;
+            margin: 155px 13px;
+        }
+        .form-group input {
+            margin-right: -2px;
+            width: 69%;
+        }
+        .form-group input[type="password"] {
+            margin-right: 15px;
+        }
+        .formlogin button {
+            margin: 15px 73px;
+        }
+    }
